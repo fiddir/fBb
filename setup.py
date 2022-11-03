@@ -1,12 +1,12 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.rst", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="fBb",
     version="0.1.0",
-    description="Python Package for Stochastic Interpolation via multipoint fractional Brownian bridges",
+    description="Python-Package-for-Stochastic-Interpolation-via-multipoint-fractional-Brownian-bridges",
     maintainer = "Jan Friedrich",
     license="MIT license",
     long_description=long_description,
