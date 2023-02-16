@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="fBb",
-    version="0.1.10",
+    version="0.1.11",
     description="Python Package for Stochastic Interpolation via multipoint fractional Brownian bridges",
     long_description= long_description,
     maintainer = "Jan Friedrich",
