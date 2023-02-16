@@ -29,7 +29,7 @@ Hurst parameter ``H`` and the desired time step ``dt`` of the underlying fractio
 
     from fBb import MFBB
 
-    mfbb = MFBB(X_i, t_i, H, N_fine)
+    mfbb = MFBB(X_i, t_i, H, dt)
     X_bridge = mfbb.bridge()
     t_bridge = mfbb.t_fine()
 
