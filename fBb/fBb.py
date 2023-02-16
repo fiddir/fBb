@@ -35,7 +35,7 @@ class MFBB:
         if 0. in self.t_i:
             raise ValueError("Please avoid zeros in t_i-array as it leads to singular inverse matrix in bridge construction.")
         #coarse_points  = np.arange(1,self.N_coarse+1)*self.N_fine//self.N_coarse
-        index = np.isin(self.t, self.t_i)
+        index = np.isin(np.array([round(t_entry,10) for t_entry in self.t]), self.t_i)
         coarse_points = np.where(index)
         X_bridge = self.X - (self.X[coarse_points]-self.X_i)@np.linalg.inv(self.cov(self.t_i,self.t_i))@self.cov(self.t, self.t_i)
         return X_bridge
