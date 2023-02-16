@@ -23,7 +23,7 @@ Stochastic interpolation
 To use ``fBb`` to interpolate sparse measurement points ``X_i`` at 
 times ``t_i``
 import the multipoint fractional Brownian bridge process with the desired
-Hurst parameter ``H`` and the desired resolution of the interpolation ``N_fine``.
+Hurst parameter ``H`` and the desired time step ``dt`` of the underlying fractional Brownian motion.
 
 .. code-block:: python
 
